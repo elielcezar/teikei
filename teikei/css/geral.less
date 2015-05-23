@@ -1,0 +1,313 @@
+// out: geral.css, sourcemap: false, compress: true
+
+@azulpadrao: #263980;
+
+html{height:100%;}
+
+body{
+    height: 100%;
+	padding: 0;
+	font-family: "Open Sans", 'sans-serif';
+}
+
+a{outline: 0 !important;}
+
+.container{max-width: 1280px; padding: 0;}
+
+section {
+	width: 100%;
+	min-width: 100%;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	overflow: hidden;
+    border: 1px solid red;
+}
+#principal a{color: #d2b55b;}
+#principal h1{
+	font-weight: 700;
+	letter-spacing: -1px;
+    font-family: "Open Sans", 'sans-serif';
+}
+#principal h2{
+	font-weight: 700;
+	letter-spacing: -1px;
+	font-size: 2.1em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+    font-family: "Open Sans", 'sans-serif';
+}
+#principal h3{
+	font-weight: 300;
+	letter-spacing: -1px;
+    font-family: "Open Sans", 'sans-serif';
+}
+
+/* formularios */
+form input[type="text"],
+form textarea,
+form select,
+form .form-email,
+form input[type="password"]{
+	padding: 7px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #111 !important;
+	border: 1px solid #d1d1d1;
+}
+form input[type="submit"]{
+	background: #d2b55b;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 6px 18px;
+	float: left;
+	border-radius: 5px;
+}
+form input[type="submit"]:hover{
+	background: #bda044;
+}
+
+a.botao{
+	border: 1px solid #d2b55b;
+	color: #fff7d0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 20px 20px 20px 0;
+}
+a.botao:hover{
+	background: #d2b55b;
+	color: #333 !important;
+	text-decoration: none;
+}
+
+/*--- TOPO ---------------------------------------------------------------------------------------------*/
+header{
+	margin-bottom: 0;
+	position: relative;
+
+    .extra-info{
+        background: @azulpadrao;
+        color: #fff;
+        font-size: .85em;
+    }
+
+    h1.logo a{
+    	width: 215px;
+    	height: 65px;
+    	display: block;
+        float: left;
+    	text-indent: -5000em;
+        margin: auto;
+    	background: transparent url(../img/teikei.png) top center no-repeat;
+    }
+    #topnav{
+    	border: none;
+    	border-radius: 0;
+
+        .navbar-collapse{border: 1px solid red; float: right;}
+
+        #menu-secoes{
+        	float: none;
+        	border-top: none;
+            z-index: 1;
+        	border-radius: 0;
+        }
+        #menu-secoes li{
+        	display: inline-block;
+        	float: none;
+        }
+        #menu-secoes li.active a{background: #212121;}
+        #menu-secoes a:hover,
+        #menu-secoes li.active a:hover{background: #d2b55b;}
+
+    }
+}
+
+
+
+/* submenu */
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {display: block;}
+header .navbar ul li ul{
+	padding: 0;
+	background: #282828;
+}
+header .navbar ul li ul li{
+	min-width: 200px;
+	list-style-image: none;
+	list-style-type: none;
+}
+header .navbar ul li ul li.active a{background-color: #e7511e !important;}
+header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
+/*.front #menu-secoes{
+	width: 20px;
+	position: fixed;
+	top: 30%;
+	right: 20px;
+}
+.front #menu-secoes li{
+	text-indent: -5000em;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: #95bae3;
+	border: 1px solid #fff;
+}
+.front #menu-secoes li.active{
+	background: #bddcee;
+	border: 1px solid #95bae3;
+}*/
+/*--- TITULO PAGINAS ----------------------------------------------------------*/
+#page-title{
+	text-align: center;    
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 2.6em;
+    padding-bottom: 12px;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+}
+/*
+#page-title h1{
+
+}*/
+/*--- PRINCIPAL -------------------------------------------------------------------*/
+#principal{
+	float: left;
+	width: 100%;
+	position: relative;
+	font-size: 1.1em;
+}
+#principal img.img-responsive{margin: auto;}
+/* animacoes */
+.delay4{
+	animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	transition-delay: .4s;
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	-o-transition-delay: .4s;
+}
+.delay6{
+	animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	transition-delay: .6s;
+	-webkit-transition-delay: .6s;
+	-moz-transition-delay: .6s;
+	-o-transition-delay: .6s;
+}
+.delay8{
+	animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-webkit-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	transition-delay: .8s;
+	-webkit-transition-delay: .8s;
+	-moz-transition-delay: .8s;
+	-o-transition-delay: .8s;
+}
+.delay10{
+	animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+.delay12{
+	animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	-o-animation-delay: 1.2s;
+	transition-delay: 1.2s;
+	-webkit-transition-delay: 1.2s;
+	-moz-transition-delay: 1.2s;
+	-o-transition-delay: 1.2s;
+}
+/*--- PAGINAS ------------------------------------------------------------------------*/
+.node-type-page #principal .container{max-width: 860px;}
+
+.node-type-servico .titulo-pagina{margin-bottom: 50px;}
+
+
+.node-type-servico #principal .inside{
+	position: relative;
+}
+
+.node-type-servico #principal .inside p{max-width: 80%; text-align: justify;}
+
+.node-type-servico #principal .botao-ligue{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 50;
+}
+
+/*--- NOTICIAS -------------------------------------------------------------------------*/
+.node-type-article #principal .container{max-width: 860px;}
+.node-type-article #principal .pane-node-title h1{margin-bottom: 25px;}
+
+/*--- CONTATO --------------------------------------------------------------------------------------*/
+body.contato #principal .panel-col-center{text-align: center;}
+body.contato #principal form input[type="text"],
+body.contato #principal form input[type="email"]{width: 100%;}
+
+
+/*--- TRABALHE CONOSCO ------------------------------------------------------------------------------*/
+
+.page-node-12 #principal .container{max-width: 650px;}
+
+.page-node-12 .titulo-pagina{margin-bottom: 50px;}
+
+.page-node-12 #page-title{ padding-bottom: 12px;}
+
+.page-node-12 #principal label{
+	/*width: 95px;*/
+	color: #333;
+	margin: 7px 0 0 7px;
+}
+
+.page-node-12 #principal form .form-text{width: 100%;}
+
+.page-node-12 #webform-component-curriculo{	width: 100%;}
+.page-node-12 #webform-component-curriculo label{color: #fff;}
+.page-node-12 #webform-component-curriculo *{
+	float: left;
+	display: inline-block;
+}
+
+.page-node-12 #webform-component-curriculo #edit-submitted-curriculo-upload-button{margin-left: 25px;}
+
+.page-node-12 #edit-submitted-curriculo{
+	width: 100%;
+	float: left;
+}
+.page-node-12 #edit-actions{float: left; width: 100%;}
+
+/*--- RODAPE -------------------------------------------------------------------*/
+footer{
+	border-top: 1px solid #ccc;
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	padding-top: 20px;
+}
+footer a{font-weight: bold;	}
+/***************************************************************************************************/
+@media (min-width: 768px){
+	.page-home .principal .conteudo .view-noticia-home2 .views-row{	min-height: 285px;}
+}

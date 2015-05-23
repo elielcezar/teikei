@@ -1,0 +1,14 @@
+(function($) {
+
+
+
+$().ready(function() {        
+
+
+
+
+});
+
+
+
+})(jQuery);
