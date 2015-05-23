@@ -12,22 +12,25 @@
         <nav id="topnav" class="navbar navbar-default" role="navigation">
             <div class="container">
 
-            <div class="navbar-header">
+                <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Teikei</a></h1>
 
-            <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Teikei</a></h1>
+                <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                <div class="menu-secoes">
                <ul id="menu-secoes" class="nav navbar-nav">
                    <li class="active"><a data-toggle="pill" href="#bemvindo">Bem vindo</a></li>
-                   <li><a data-toggle="pill" href="#servicos">Especialistas</a></li>
+                   <li><a data-toggle="pill" href="#especialistas">Especialistas</a></li>
                    <li><a data-toggle="pill" href="#laboratorio">Estrutura</a></li>
                    <li><a data-toggle="pill" href="#depoimentos">Depoimentos</a></li>
                    <li><a data-toggle="pill" href="#contato">Contato</a></li>
@@ -40,8 +43,12 @@
 </header>
 <!-- / HEADER -->
 
+
+
 <section class="destaque">
+    <div class="container">
     <h2>MANUTENÇÃO APARELHOS ENDOSCÓPICOS</h2>
+    </div>
 </section>
 
 <div id="principal">
@@ -50,21 +57,23 @@
       <div class="container">
          <h3>Bem vindo a Teikei Assistência <br/>em aparelhos endoscópicos</h3>
         <p>A Teikei é especializada em soluções em tecnologia endosçopica</p>
-        <div cass="row">
-            <div class="col-sm-4">
-                <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
-                <h4>Missão</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
-                <h4>Valores</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class="col-sm-4">
-                <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
-                <h4>Nossas Soluções</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="sobre">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
+                    <h4>Missão</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
+                    <h4>Valores</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/missao.jpg" alt="Missao" class="img-responsive" />
+                    <h4>Nossas Soluções</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -80,7 +89,7 @@
               <div class="manutencao">
                     <h3>Manutenção</h3>
                     <p>Manutenção preventiva</p>
-                    <span><a href="#">Saiba Mais</a>
+                    <span><a href="#">Saiba Mais</a></span>
                 </div>
           </div>
 
@@ -88,7 +97,7 @@
               <div class="assistencia-tecnica">
                 <h3>Treinamentos</h3>
                 <p>Manutenção preventiva</p>
-                <span><a href="#">Saiba Mais</a>
+                <span><a href="#">Saiba Mais</a></span>
             </div>
           </div>
 
@@ -96,7 +105,7 @@
             <div class="assistencia-tecnica">
                 <h3>Assistência Técnica</h3>
                 <p>Manutenção preventiva</p>
-                <span><a href="#">Saiba Mais</a>
+                <span><a href="#">Saiba Mais</a></span>
             </div>
           </div>
 
@@ -111,7 +120,7 @@
 	<div class="container">
         <h2>Conheça nosso time de especialistas</h2>
 
-        <div cass="row">
+        <div class="row">
             <div class="col-sm-3">
                 <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/milton-takei.jpg" alt="Missao" class="img-responsive" />
                 <h4>Milton Takei</h4>
@@ -226,6 +235,7 @@
  </div><!-- / principal -->
 
 
+
  <footer>
      <div class="call">
          <div class="container">
@@ -235,14 +245,16 @@
          </div>
      </div>
      <div class="assinatura">
+         <div class="container">
          <span>Teikei © 2015 - Design by WKMT</span>
          <ul class="menu-rodape">
               <li class="active"><a data-toggle="pill" href="#bemvindo">Bem vindo</a></li>
-              <li><a data-toggle="pill" href="#servicos">Especialistas</a></li>
+              <li><a data-toggle="pill" href="#especialistas">Especialistas</a></li>
               <li><a data-toggle="pill" href="#laboratorio">Estrutura</a></li>
               <li><a data-toggle="pill" href="#depoimentos">Depoimentos</a></li>
               <li><a data-toggle="pill" href="#contato">Contato</a></li>
             </ul>
+        </div>
      </div>
  </footer>
 

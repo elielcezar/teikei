@@ -3,15 +3,32 @@
 /*--- DESTAQUE HOME --------------------------------------------------------------------------------------*/
 .front .destaque{
     width: 100%;
-    border: 1px solid blue;
     float: left;
     min-height: 500px;
     background: transparent url(../img/bg_topo.jpg) top center no-repeat;
     background-size: cover;
+    color: #fff;
+    padding: 0;
 }
 
 /*--- BEM VINDO ----------------------------------------------------------------------------------------------*/
+.front #bemvindo{
+    text-align: center;
+    background: #eff5f7;
 
+
+    .sobre{text-align: left;}
+}
+
+/*--- SERVICOS --------------------------------------------------------------------------------------------*/
+.front #servicos{
+    text-align: center;
+}
+
+/*--- ESPECIALISTAS -------------------------------------------------------------------------------------------*/
+.front #especialistas{
+    background: #eff5f7;
+}
 
 /*--- DEPOIMENTOS --------------------------------------------------------------------------------------------*/
 .front #depoimentos{
@@ -27,19 +44,18 @@
 }
 
 /*--- CONTATO ---------------------------------------------------------------------------------------------*/
-.front #contato {	
+.front #contato {
 	padding: 100px 0;
+
+    h2{
+       font-size: 1.4em;
+       margin-bottom: 25px;
+    }
+    p{text-align: center;}
+
+    .form-submit{
+        width: 100%;
+        border-radius: 0;
+        text-transform: uppercase;
+    }
 }
-.front #contato h2{
-	font-size: 1.4em;
-	margin-bottom: 25px;
-}
-.front #contato p{text-align: center;}
-/*--- BLOCO 6 ---------------------------------------------------------------------------------------------*/
-.front #mapa{
-	padding: 0;
-	margin: 0;
-	border-top: 5px solid #d8b45c;
-	color: #fff;
-}
-.front #mapa iframe{width: 100%;}
