@@ -2,13 +2,15 @@
 
 @azulpadrao: #263980;
 @cinzapadrao: #2f383d;
+@fontepadrao: 'Lato', sans-serif;
 
 html{height:100%;}
 
 body{
     height: 100%;
 	padding: 0;
-	font-family: "Open Sans", 'sans-serif';
+    color: @cinzapadrao;
+    font-family: @fontepadrao;
 }
 
 a{outline: 0 !important;}
@@ -22,27 +24,31 @@ section {
 	overflow: hidden;
 }
 #principal a{color: @azulpadrao;}
+#principal p{
+    font-size: .85em;
+}
+#principal .modal{color: @cinzapadrao;}
 #principal h1{
-	font-weight: 700;
 	letter-spacing: -1px;
-    font-family: "Open Sans", 'sans-serif';
+    font-family: @fontepadrao;
 }
 #principal h2{
-	font-weight: 700;
 	letter-spacing: -1px;
-	font-size: 2.1em;
+	font-size: 2.85em;
 	text-transform: uppercase;
-	text-align: center;
 	padding-bottom: 15px;
 	margin-bottom: 25px;
-	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
-    font-family: "Open Sans", 'sans-serif';
+    font-family: @fontepadrao;
+    font-weight: 300;
 }
 #principal h3{
-	font-weight: 300;
 	letter-spacing: -1px;
-    font-family: "Open Sans", 'sans-serif';
+    font-size: 2.14em;
+    font-family: @fontepadrao;
+    font-weight: 300;
 }
+#principal p.chamada{color: #99abb7;}
+
 
 /* formularios */
 form input[type="text"],
@@ -71,7 +77,7 @@ form input[type="submit"]:hover{
 	background: @cinzapadrao;
 }
 
-a.botao{
+.botao{
 	color: #fff;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -82,11 +88,45 @@ a.botao{
 	margin: 20px 20px 20px 0;
     background: @azulpadrao;
 }
-a.botao:hover{
+.botao:hover{
 	background: @cinzapadrao;
 	color: #333 !important;
 	text-decoration: none;
 }
+
+.btn.btn-primary{
+    background: @azulpadrao;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-right: 20px;
+
+    &:hover{
+        background: @cinzapadrao;
+        color: #fff;
+    }
+}
+
+.btn.btn-secondary{
+    background: transparent;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-right: 20px;
+
+    &:hover{
+        background: @cinzapadrao;
+        color: #fff;
+    }
+}
+
+
 
 /*--- TOPO ---------------------------------------------------------------------------------------------*/
 header{
