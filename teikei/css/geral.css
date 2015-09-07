@@ -1,1 +1,866 @@
-html{height:100%}body{height:100%;padding:0;color:#2f383d;font-family:'Lato',sans-serif}a{outline:0 !important}.container{max-width:980px;padding:0}section{width:100%;min-width:100%;padding:75px 0;overflow:hidden}#principal a{color:#263980}#principal p{font-size:.85em}#principal .modal{color:#2f383d}#principal h1{letter-spacing:-1px;font-family:'Lato',sans-serif}#principal h2{letter-spacing:-1px;font-size:2.85em;text-transform:uppercase;padding-bottom:15px;margin-bottom:25px;font-family:'Lato',sans-serif;font-weight:300}#principal h3{letter-spacing:-1px;font-size:2.14em;font-family:'Lato',sans-serif;font-weight:300}#principal p.chamada{color:#99abb7}form input[type="text"],form textarea,form select,form .form-email,form input[type="password"]{width:100%;padding:7px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;color:#111 !important;border:1px solid #d1d1d1}form input[type="submit"]{background:#263980;font-weight:bold;color:#fff;border:none;padding:6px 18px;float:left;border-radius:5px}form input[type="submit"]:hover{background:#2f383d}.botao{color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;font-weight:bold;display:inline-block;padding:5px 15px;margin:20px 20px 20px 0;background:#263980}.botao:hover{background:#2f383d;color:#333 !important;text-decoration:none}.btn.btn-primary{background:#263980;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border:1px solid #fff;text-transform:uppercase;font-size:.85em;margin-right:20px}.btn.btn-primary:hover{background:#2f383d;color:#fff}.btn.btn-secondary{background:transparent;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border:1px solid #fff;text-transform:uppercase;font-size:.85em;margin-right:20px}.btn.btn-secondary:hover{background:#2f383d;color:#fff}header{margin-bottom:0;position:relative}header .extra-info{background:#263980;color:#fff;font-size:.85em;padding:10px 0}header .extra-info span{display:inline-block;margin-right:20px}header .extra-info a{color:#fff}header h1.logo{display:block;float:left;margin:18px 0 0 0;padding:0}header h1.logo a{width:215px;height:65px;display:inline-block;text-indent:-5000em;margin:auto;background:transparent url(../img/teikei.png) top center no-repeat}header .navbar-header{padding:0 !important;margin:0 !important}#page-title{text-align:center;font-family:'Open Sans',sans-serif;font-weight:700;font-size:2.6em;padding-bottom:12px;background:transparent url(../img/bg_titulos.jpg) bottom center no-repeat}#principal{float:left;width:100%;position:relative;font-size:1.1em}#principal img.img-responsive{margin:auto}.delay4{animation-delay:.4s;-moz-animation-delay:.4s;-webkit-animation-delay:.4s;-o-animation-delay:.4s;transition-delay:.4s;-webkit-transition-delay:.4s;-moz-transition-delay:.4s;-o-transition-delay:.4s}.delay6{animation-delay:.6s;-moz-animation-delay:.6s;-webkit-animation-delay:.6s;-o-animation-delay:.6s;transition-delay:.6s;-webkit-transition-delay:.6s;-moz-transition-delay:.6s;-o-transition-delay:.6s}.delay8{animation-delay:.8s;-moz-animation-delay:.8s;-webkit-animation-delay:.8s;-o-animation-delay:.8s;transition-delay:.8s;-webkit-transition-delay:.8s;-moz-transition-delay:.8s;-o-transition-delay:.8s}.delay10{animation-delay:1s;-moz-animation-delay:1s;-webkit-animation-delay:1s;-o-animation-delay:1s;transition-delay:1s;-webkit-transition-delay:1s;-moz-transition-delay:1s;-o-transition-delay:1s}.delay12{animation-delay:1.2s;-moz-animation-delay:1.2s;-webkit-animation-delay:1.2s;-o-animation-delay:1.2s;transition-delay:1.2s;-webkit-transition-delay:1.2s;-moz-transition-delay:1.2s;-o-transition-delay:1.2s}footer{float:left;width:100%;color:#fff}footer .call{background:#263980;text-align:center;padding:100px 0}footer .assinatura{color:#6d7a83;padding:15px 0 5px 0;font-size:.85em;background:#2f383d}footer .assinatura ul{list-style-type:none;float:right}footer .assinatura ul li{display:inline-block;margin-left:20px}footer .assinatura ul li a{color:#6d7a83;font-weight:normal}footer a{font-weight:bold}@media (max-width:767px){header h1.logo{margin:auto}header .navbar-toggle{margin:17px 5px 0 0}}@media (min-width:768px){header #topnav{border:none;border-radius:0;background:#fff;box-shadow:none;margin-bottom:0;padding:0}header #topnav .navbar-collapse{float:right;padding:25px 0;margin-bottom:0}header #topnav #menu-secoes{float:none;border-top:none;z-index:1;border-radius:0}header #topnav #menu-secoes li{display:inline-block;float:none}header #topnav #menu-secoes a{padding-left:25px;padding-right:25px}header #topnav #menu-secoes li.active a{background:#f5f5f5}header #topnav #menu-secoes a:hover,header #topnav #menu-secoes li.active a:hover{background:#f5f5f5}}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  padding: 0;
+  color: #2f383d;
+  font-family: 'Lato', sans-serif;
+}
+a {
+  outline: 0 !important;
+}
+.container {
+  max-width: 980px;
+  padding: 0;
+}
+section {
+  width: 100%;
+  min-width: 100%;
+  padding: 75px 0;
+  overflow: hidden;
+}
+#principal a {
+  color: #263980;
+}
+#principal p {
+  font-size: .85em;
+}
+#principal .modal {
+  color: #2f383d;
+}
+#principal h1 {
+  letter-spacing: -1px;
+  font-family: 'Lato', sans-serif;
+}
+#principal h2 {
+  letter-spacing: -1px;
+  font-size: 2.85em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+#principal h3 {
+  letter-spacing: -1px;
+  font-size: 2.14em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+#principal p.chamada {
+  color: #99abb7;
+}
+.modal-content {
+  border-radius: 0;
+}
+/* formularios */
+
+form input[type="text"],
+form textarea,
+form select,
+form .form-email,
+form input[type="password"] {
+  width: 100%;
+  padding: 7px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #111111 !important;
+  border: 1px solid #d1d1d1;
+}
+form input[type="submit"] {
+  background: #263980;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  float: left;
+  border-radius: 5px;
+}
+form input[type="submit"]:hover {
+  background: #2f383d;
+}
+.botao {
+  color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 20px 20px 20px 0;
+  background: #263980;
+}
+.botao:hover {
+  background: #2f383d;
+  color: #333333 !important;
+  text-decoration: none;
+}
+.btn.btn-primary {
+  background: #263980;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: .85em;
+  margin-right: 20px;
+}
+.btn.btn-primary:hover {
+  background: #2f383d;
+  color: white;
+}
+.btn.btn-secondary {
+  background: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: .85em;
+  margin-right: 20px;
+}
+.btn.btn-secondary:hover {
+  background: #2f383d;
+  color: white;
+}
+/* carousel */
+
+a.carousel-control {
+  width: 60px;
+  height: 60px;
+  padding-top: 15px;
+  background: transparent url(../img/overlay.png) !important;
+  color: white !important;
+  top: 50%;
+  margin-top: -30px;
+  opacity: 1;
+}
+/*--- TOPO ---------------------------------------------------------------------------------------------*/
+
+header {
+  margin-bottom: 0;
+  position: relative;
+}
+header .extra-info {
+  background: #263980;
+  color: white;
+  font-size: .85em;
+  padding: 10px 0;
+}
+header .extra-info span {
+  display: inline-block;
+  margin-right: 20px;
+}
+header .extra-info a {
+  color: white;
+}
+header h1.logo {
+  display: block;
+  float: left;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+header h1.logo a {
+  width: 215px;
+  height: 65px;
+  display: inline-block;
+  text-indent: -5000em;
+  margin: auto;
+  background: transparent url(../img/teikei.png) top center no-repeat;
+}
+header .navbar-header {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/*--- TITULO PAGINAS ----------------------------------------------------------*/
+
+#page-title {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.6em;
+  padding-bottom: 12px;
+  background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+}
+/*--- PRINCIPAL -------------------------------------------------------------------*/
+
+#principal {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-size: 1.1em;
+}
+#principal img.img-responsive {
+  margin: auto;
+}
+/* animacoes */
+
+.delay4 {
+  animation-delay: .4s;
+  -moz-animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+  -o-animation-delay: .4s;
+  transition-delay: .4s;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+}
+.delay6 {
+  animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  -o-animation-delay: .6s;
+  transition-delay: .6s;
+  -webkit-transition-delay: .6s;
+  -moz-transition-delay: .6s;
+  -o-transition-delay: .6s;
+}
+.delay8 {
+  animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  transition-delay: .8s;
+  -webkit-transition-delay: .8s;
+  -moz-transition-delay: .8s;
+  -o-transition-delay: .8s;
+}
+.delay10 {
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+}
+.delay12 {
+  animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  transition-delay: 1.2s;
+  -webkit-transition-delay: 1.2s;
+  -moz-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+}
+a.botao.editar {
+  color: white !important;
+  margin: 50px auto !important;
+  text-align: center;
+  clear: both !important;
+  width: 200px;
+  padding: 15px;
+  display: inline-block;
+}
+/*--- DESTAQUE HOME --------------------------------------------------------------------------------------*/
+
+.front #principal .destaque {
+  width: 100%;
+  float: left;
+  padding: 0;
+  /*min-height: 500px;    
+    background-size: cover;
+    color: #fff;
+    padding: 115px 0 0 0;*/
+
+}
+.front #principal .destaque .item {
+  width: 100%;
+  float: left;
+  min-height: 500px;
+  background-size: cover;
+  color: white;
+  padding: 115px 0 0 0;
+}
+.front #principal .destaque .item-1 {
+  background: transparent url(../img/bg_topo.jpg) top center no-repeat;
+}
+.front #principal .destaque .item-2 {
+  background: transparent url(../img/bg_topo2.jpg) top center no-repeat;
+}
+.front #principal .destaque .item-3 {
+  background: transparent url(../img/bg_topo3.jpg) top center no-repeat;
+}
+.front #principal .destaque h2 {
+  margin: 0;
+  font-size: 1.85em;
+}
+.front #principal .destaque h2 strong {
+  font-size: 1.6em;
+}
+.front #principal .destaque h4 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: white;
+}
+.front #principal .destaque .modal h4 {
+  color: #2f383d;
+}
+.front #principal .destaque #contrateja .modal-content {
+  float: left;
+  width: 100%;
+  border: 1px solid red;
+  padding-bottom: 50px;
+}
+.front #principal .destaque #contrateja .form-submit {
+  width: 100%;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+/*--- BEM VINDO ----------------------------------------------------------------------------------------------*/
+
+.front #bemvindo {
+  text-align: center;
+  background: #eff5f7;
+}
+.front #bemvindo .sobre {
+  text-align: left;
+}
+.front #bemvindo .sobre .field-name-field-titulo {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.front #bemvindo .sobre .field-name-field-chamada {
+  color: #9aa7af;
+  margin-bottom: 50px;
+  font-size: .85em;
+}
+.front #bemvindo p {
+  color: #9aa7af;
+  margin-bottom: 50px;
+}
+.front #bemvindo .view-footer {
+  float: left;
+  width: 100%;
+  border: 1px solid red;
+}
+/*--- SERVICOS --------------------------------------------------------------------------------------------*/
+
+.front #servicos {
+  text-align: center;
+  padding-top: 120px;
+}
+.front #servicos .servico {
+  min-height: 220px;
+  padding: 0 35px;
+  border: 1px solid #e7ecef;
+  border-bottom: 4px solid #e7ecef;
+  margin-bottom: 25px 0;
+  position: relative;
+}
+.front #servicos .servico h4 {
+  font-weight: 600;
+}
+.front #servicos .servico i {
+  display: inline-block;
+  width: 80px;
+  height: 92px;
+  background-image: url(../img/servicos.png);
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+.front #servicos .servico .saibamais {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 -20px 0;
+}
+.front #servicos .servico .saibamais a {
+  color: white;
+}
+.front #servicos .servico .botao {
+  margin: 0;
+  font-weight: normal;
+  color: white;
+  font-size: .85em;
+}
+.front #servicos .servico .botao:hover {
+  color: white !important;
+}
+.front #servicos .servico-3 i {
+  background-position: 0 0;
+}
+.front #servicos .servico-3:hover i {
+  background-position: 0 -102px;
+}
+.front #servicos .servico-4 i {
+  background-position: -90px 0;
+}
+.front #servicos .servico-4:hover i {
+  background-position: -90px -102px;
+}
+.front #servicos .servico-8 i {
+  background-position: -180px 0;
+}
+.front #servicos .servico-8:hover i {
+  background-position: -180px -102px;
+}
+/*--- ESPECIALISTAS -------------------------------------------------------------------------------------------*/
+
+.front #especialistas {
+  background: #eff5f7;
+  text-align: center;
+}
+.front #especialistas h3 {
+  text-align: center;
+}
+.front #especialistas p {
+  color: #9aa7af;
+  margin-bottom: 50px;
+}
+.front #especialistas .pessoas .foto {
+  border-top: 1px solid #e6eaec;
+  border-left: 1px solid #e6eaec;
+  border-right: 1px solid #e6eaec;
+  background: white;
+}
+.front #especialistas .pessoas .info {
+  background: white;
+  border: 1px solid #e6eaec;
+  padding: 0 18px;
+  min-height: 150px;
+  text-align: left;
+}
+.front #especialistas .pessoas .info .cargo {
+  color: #6d7a83;
+}
+.front #especialistas .pessoas .info p {
+  margin-bottom: 10px;
+}
+/*--- LABORATORIO -------------------------------------------------------------------------------------------*/
+
+.front #laboratorio {
+  text-align: center;
+}
+.front #laboratorio p {
+  color: #9aa7af;
+  margin-bottom: 50px;
+}
+.front #laboratorio #thumbcarousel .item {
+  width: 100%;
+}
+.front #laboratorio #thumbcarousel .carousel-inner .item div {
+  display: block;
+  float: left;
+  margin: 12px 13px 0 0;
+}
+.front #laboratorio #thumbcarousel .carousel-inner .item div:hover {
+  cursor: pointer;
+}
+.front #laboratorio #thumbcarousel .carousel-inner .item div:nth-child(6) {
+  margin-right: 0;
+}
+.front #laboratorio #thumbcarousel a.carousel-control {
+  margin-top: -25px;
+}
+.front #laboratorio #thumbcarousel a.right.carousel-control {
+  right: 3px;
+}
+/*--- DEPOIMENTOS --------------------------------------------------------------------------------------------*/
+
+.front #depoimentos {
+  background: #3c3b3c url(../img/bg_depoimentos.jpg) top center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.front #depoimentos h3 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.front #depoimentos blockquote {
+  font-style: italic;
+}
+.front #depoimentos .autor {
+  padding: 0 25px 10px 25px;
+  font-style: italic;
+  background: #263980;
+  float: right;
+}
+.front #depoimentos .autor p {
+  margin: 0;
+}
+.front #depoimentos .autor .nome {
+  font-size: 1.8em;
+}
+.front #depoimentos .marcas {
+  width: 100%;
+  padding: 50px;
+  background: transparent url(../img/overlay.png);
+}
+.front #depoimentos #carousel-marcas {
+  float: left;
+  width: 100%;
+}
+.front #depoimentos #carousel-marcas .marca {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.front #depoimentos #carousel-marcas a.carousel-control {
+  border: 2px solid white;
+  border-radius: 500px;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  padding-top: 0;
+}
+/*--- CONTATO ---------------------------------------------------------------------------------------------*/
+
+.front #contato {
+  padding: 100px 0;
+  text-align: left;
+}
+.front #contato h4 {
+  margin-top: 0;
+}
+.front #contato h5 {
+  margin-top: 0;
+}
+.front #contato .mapa {
+  margin-bottom: 20px;
+}
+.front #contato p {
+  color: #9aa7af;
+}
+.front #contato .mapa {
+  float: left;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.front #contato .mapa iframe {
+  margin-top: -120px;
+}
+.front #contato form label {
+  font-weight: normal;
+  color: #9aa7af;
+  margin: 16px 0 0 7px !important;
+}
+.front #contato form .form-item {
+  float: left;
+  width: 100%;
+  margin: 0 0 14px 0;
+}
+.front #contato form #webform-component-cidade {
+  width: 67%;
+}
+.front #contato form #webform-component-uf {
+  width: 30%;
+  float: right;
+}
+.front #contato form .form-submit {
+  width: 100%;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+/*--- RODAPE -------------------------------------------------------------------*/
+
+footer {
+  float: left;
+  width: 100%;
+  color: white;
+}
+footer .call {
+  background: #263980 url(../img/bg_rodape.jpg) top center no-repeat;
+  text-align: center;
+  padding: 70px 0;
+}
+footer .call .ligue {
+  background: #0072a5;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px 30px;
+}
+footer .call .ligue a {
+  color: white;
+  font-weight: normal;
+}
+footer .assinatura {
+  color: #6d7a83;
+  padding: 15px 0 5px 0;
+  font-size: .85em;
+  background: #2f383d;
+}
+footer .assinatura ul {
+  list-style-type: none;
+  float: right;
+}
+footer .assinatura ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+footer .assinatura ul li a {
+  color: #6d7a83;
+  font-weight: normal;
+}
+footer a {
+  font-weight: bold;
+}
+/*--- ADMIN ---------------------------------------------------------------------------------------*/
+
+/* editar conteudo */
+
+.page-node-edit h1.title em {
+  display: none;
+}
+.page-node-edit .field-type-field-collection .form-text {
+  width: 95%;
+}
+.page-node-edit .field-type-field-collection .field-label label {
+  font-weight: normal;
+  margin-left: 5px;
+}
+.page-node-edit textarea {
+  padding: 7px;
+}
+.page-node-edit input[type="submit"] {
+  font-weight: normal;
+  margin-top: 15px;
+}
+.page-node-edit .vertical-tabs-list a strong {
+  font-weight: normal;
+}
+/* conteudo */
+
+.page-admin-content fieldset {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+.page-admin-content fieldset legend {
+  display: block;
+  margin-bottom: 50px;
+}
+.page-admin-content input[type="submit"] {
+  font-weight: normal;
+  margin-top: 15px;
+}
+/* webform */
+
+.page-node-webform-results .tabs,
+.page-node-webform-results .webform-results-per-page {
+  display: none;
+}
+.page-node-submission .tabs,
+.page-node-submission .resend,
+.page-node-submission .webform-submission-navigation {
+  display: none;
+}
+.page-node-submission fieldset {
+  padding: 0;
+}
+/* pessoas */
+
+.page-admin-people fieldset {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+.page-admin-people fieldset legend {
+  display: block;
+  margin-bottom: 50px;
+}
+.page-admin-people input[type="submit"] {
+  font-weight: normal;
+  margin-top: 15px;
+}
+.page-admin-people-create #edit-locale,
+.page-admin-people-create #edit-metatags {
+  display: none;
+}
+.page-user-edit .tabs,
+.page-user-edit #edit-locale,
+.page-user-edit #edit-picture,
+.page-user-edit #edit-timezone,
+.page-user-edit #edit-ckeditor,
+.page-user-edit #edit-metatags {
+  display: none;
+}
+/***************************************************************************************************/
+
+@media (max-width: 460px) {
+  footer .ligue.desktop {
+    display: none;
+  }
+}
+@media (min-width: 461px) {
+  footer .ligue.mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .front header .navbar-toggle {
+    background-color: #263980;
+    border: none;
+  }
+  .front header .icon-bar {
+    background-color: white !important;
+  }
+  .front header #topnav {
+    border: none;
+    box-shadow: none;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+  .front header .extra-info {
+    display: none;
+  }
+  .front header h1.logo {
+    margin: auto;
+  }
+  .front header .navbar-toggle {
+    margin: 17px 5px 0 0;
+  }
+  .front header #menu-secoes {
+    text-align: center;
+  }
+  section {
+    padding: 20px;
+  }
+  .front #principal .destaque .btn {
+    display: none;
+  }
+  .front #principal .destaque .item {
+    background-color: #263980;
+    background-image: none;
+    padding: 7% 15% 0 15%;
+    min-height: 220px;
+  }
+  .front #principal .destaque .item h2 {
+    font-size: 1em;
+  }
+  .front #principal .destaque .item h4 {
+    font-size: 1em;
+  }
+  .front #bemvindo img,
+  .front #bemvindo p {
+    display: none;
+  }
+  .front #bemvindo i {
+    float: right;
+    color: #9aa7af;
+  }
+  .front #bemvindo i.fa-minus {
+    display: none;
+  }
+  .front #bemvindo h4 {
+    background: white;
+    border: 1px solid #9aa7af;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .front #bemvindo .toggled h4 {
+    color: white;
+    background: #263980;
+    margin-bottom: 0;
+  }
+  .front #bemvindo .toggled i {
+    color: white;
+  }
+  .front #bemvindo .toggled i.fa-minus {
+    display: block;
+  }
+  .front #bemvindo .toggled p {
+    background: white;
+    border: 1px solid #9aa7af;
+    padding: 15px;
+    margin-top: 0;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .front #bemvindo .toggled i.fa-plus {
+    display: none;
+  }
+  .front #servicos .servico {
+    margin-bottom: 100px;
+  }
+  .front #especialistas .pessoa {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .front #laboratorio #thumbcarousel {
+    display: none;
+  }
+  .front #depoimentos {
+    display: none;
+  }
+  .front #contato {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .front #contato h4 {
+    font-size: 2.14em;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .front #contato .formulario-contato,
+  .front #contato .mapa {
+    display: none;
+  }
+  .front footer .call {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .front footer .assinatura {
+    text-align: center;
+  }
+  .front footer .menu-rodape {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header #topnav {
+    border: none;
+    border-radius: 0;
+    background: white;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  header #topnav .navbar-collapse {
+    float: right;
+    padding: 25px 0;
+    margin-bottom: 0;
+  }
+  header #topnav #menu-secoes {
+    float: none;
+    border-top: none;
+    z-index: 1;
+    border-radius: 0;
+  }
+  header #topnav #menu-secoes li {
+    display: inline-block;
+    float: none;
+  }
+  header #topnav #menu-secoes a {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  header #topnav #menu-secoes li.active a {
+    background: whitesmoke;
+  }
+  header #topnav #menu-secoes a:hover,
+  header #topnav #menu-secoes li.active a:hover {
+    background: whitesmoke;
+  }
+  .front #bemvindo i {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}

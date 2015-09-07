@@ -1,6 +1,5 @@
-// out: geral.css, sourcemap: false, compress: true
-
 @azulpadrao: #263980;
+@azulsecundario: #9aa7af; 
 @cinzapadrao: #2f383d;
 @fontepadrao: 'Lato', sans-serif;
 
@@ -21,8 +20,9 @@ section {
 	width: 100%;
 	min-width: 100%;
     padding: 75px 0;
-	overflow: hidden;
+	overflow: hidden;    
 }
+
 #principal a{color: @azulpadrao;}
 #principal p{
     font-size: .85em;
@@ -32,6 +32,7 @@ section {
 	letter-spacing: -1px;
     font-family: @fontepadrao;
 }
+
 #principal h2{
 	letter-spacing: -1px;
 	font-size: 2.85em;
@@ -49,6 +50,8 @@ section {
 }
 #principal p.chamada{color: #99abb7;}
 
+.modal-content{border-radius: 0;}
+
 
 /* formularios */
 form input[type="text"],
@@ -58,9 +61,9 @@ form .form-email,
 form input[type="password"]{
     width: 100%;
 	padding: 7px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 	color: #111 !important;
 	border: 1px solid #d1d1d1;
 }
@@ -69,7 +72,7 @@ form input[type="submit"]{
 	font-weight: bold;
 	color: #fff;
 	border: none;
-	padding: 6px 18px;
+	padding: 9px 18px;
 	float: left;
 	border-radius: 5px;
 }
@@ -127,6 +130,18 @@ form input[type="submit"]:hover{
 }
 
 
+/* carousel */
+a.carousel-control{
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+    background: transparent url(../img/overlay.png) !important; 
+    color: #fff !important;    
+    top: 50%;
+    margin-top: -30px;
+    opacity: 1;
+}
+
 
 /*--- TOPO ---------------------------------------------------------------------------------------------*/
 header{
@@ -168,40 +183,6 @@ header{
 }
 
 
-
-/* submenu */
-/*ul.nav li.dropdown:hover > ul.dropdown-menu {display: block;}
-header .navbar ul li ul{
-	padding: 0;
-	background: #282828;
-}
-header .navbar ul li ul li{
-	min-width: 200px;
-	list-style-image: none;
-	list-style-type: none;
-}
-header .navbar ul li ul li.active a{background-color: #e7511e !important;}
-header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
-/*.front #menu-secoes{
-	width: 20px;
-	position: fixed;
-	top: 30%;
-	right: 20px;
-}
-.front #menu-secoes li{
-	text-indent: -5000em;
-	width: 20px;
-	height: 20px;
-	overflow: hidden;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	background: #95bae3;
-	border: 1px solid #fff;
-}
-.front #menu-secoes li.active{
-	background: #bddcee;
-	border: 1px solid #95bae3;
-}*/
 /*--- TITULO PAGINAS ----------------------------------------------------------*/
 #page-title{
 	text-align: center;
@@ -211,10 +192,7 @@ header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
     padding-bottom: 12px;
 	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
 }
-/*
-#page-title h1{
 
-}*/
 /*--- PRINCIPAL -------------------------------------------------------------------*/
 #principal{
 	float: left;
@@ -275,6 +253,320 @@ header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
 	-o-transition-delay: 1.2s;
 }
 
+a.botao.editar{
+    color: #fff !important;
+    margin: 50px auto !important;
+    text-align: center;
+    clear: both !important;
+    width: 200px;
+    padding: 15px;
+    display: inline-block;
+}
+
+
+/*--- DESTAQUE HOME --------------------------------------------------------------------------------------*/
+.front #principal .destaque{
+    width: 100%;
+    float: left;
+    padding: 0;
+    /*min-height: 500px;    
+    background-size: cover;
+    color: #fff;
+    padding: 115px 0 0 0;*/
+
+    .item{
+        width: 100%;
+        float: left;
+        min-height: 500px;    
+        background-size: cover;
+        color: #fff;
+        padding: 115px 0 0 0;
+    }
+
+    .item-1{background: transparent url(../img/bg_topo.jpg) top center no-repeat;}
+    .item-2{background: transparent url(../img/bg_topo2.jpg) top center no-repeat;}
+    .item-3{background: transparent url(../img/bg_topo3.jpg) top center no-repeat;}
+
+    h2{
+        margin: 0;
+        font-size: 1.85em;
+
+        strong{font-size: 1.6em;}
+    }
+
+    h4{
+        font-size: 1.5em;
+        line-height: 1.2em;
+        font-weight: 300;
+        margin-bottom: 35px;
+        color: #fff;
+    }
+
+    .modal h4{color: @cinzapadrao;}
+
+    #contrateja{
+        .modal-content{
+            float: left;
+            width: 100%;
+            border: 1px solid red;
+            padding-bottom: 50px;
+        }
+        /*.modal-body{
+            padding-bottom: 75px;            
+        }*/
+        
+        .form-submit{
+            width: 100%;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/*--- BEM VINDO ----------------------------------------------------------------------------------------------*/
+.front #bemvindo{
+    text-align: center;
+    background: #eff5f7;     
+
+    .sobre{
+        text-align: left;   
+
+         .field-name-field-titulo{
+            font-size: 18px;
+            margin: 10px 0;
+         }
+         .field-name-field-chamada{
+            color: @azulsecundario;
+            margin-bottom: 50px;
+            font-size: .85em;
+         }
+    }
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+
+    .view-footer{
+        float: left;
+        width: 100%;
+        border: 1px solid red;
+    }
+}
+
+/*--- SERVICOS --------------------------------------------------------------------------------------------*/
+.front #servicos{
+    text-align: center;
+    padding-top: 120px;    
+
+    .servico{
+        min-height: 220px;
+        padding: 0 35px;
+        border: 1px solid #e7ecef;
+        border-bottom: 4px solid #e7ecef;
+        margin-bottom: 25px 0;
+        position: relative;
+
+        h4{font-weight: 600;}
+
+        i{
+            display: inline-block;
+            width: 80px;
+            height: 92px;
+            background-image: url(../img/servicos.png);
+            background-repeat: no-repeat;
+            margin-top: -50px;
+        }
+
+        .saibamais{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0 0 -20px 0;
+
+            a{color: #fff;}
+        }
+
+
+        .botao{
+            margin: 0;
+            font-weight: normal;
+            color: #fff;
+            font-size: .85em;
+
+            &:hover{color: #fff !important;}
+        }
+    }
+    .servico-3 i{background-position: 0 0;}
+        .servico-3:hover i{background-position: 0 -102px;}
+
+    .servico-4 i{background-position: -90px 0;}
+        .servico-4:hover i{background-position: -90px -102px;}
+
+    .servico-8 i{background-position: -180px 0;}
+        .servico-8:hover i{background-position: -180px -102px;}
+}
+
+/*--- ESPECIALISTAS -------------------------------------------------------------------------------------------*/
+.front #especialistas{
+    background: #eff5f7;
+    text-align: center;
+
+    h3{text-align: center;}
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+
+    .pessoas{        
+
+        .foto{
+            border-top: 1px solid #e6eaec;
+            border-left: 1px solid #e6eaec;
+            border-right: 1px solid #e6eaec;
+            background: #fff;
+        }
+
+        .info{
+            background: #fff;
+            border: 1px solid #e6eaec;
+            padding: 0 18px;
+            min-height: 150px;
+            text-align: left;
+
+            .cargo{color: #6d7a83;}
+
+            p{margin-bottom: 10px;}
+        }
+    }
+}
+
+/*--- LABORATORIO -------------------------------------------------------------------------------------------*/
+
+.front #laboratorio{
+    text-align: center;
+
+    p{
+        color: @azulsecundario;
+        margin-bottom: 50px;
+    }
+
+    #thumbcarousel{
+
+        .item{width: 100%;}
+
+        .carousel-inner .item div{
+            display: block; 
+            float: left; 
+            margin: 12px 13px 0 0;
+
+            &:hover{cursor: pointer;}
+        }
+        .carousel-inner .item div:nth-child(6){margin-right: 0;}
+
+        a.carousel-control{margin-top: -25px;}
+        a.right.carousel-control{right: 3px;}
+    }
+
+   
+}
+
+/*--- DEPOIMENTOS --------------------------------------------------------------------------------------------*/
+.front #depoimentos{
+    background: #3c3b3c url(../img/bg_depoimentos.jpg) top center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    h3{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    blockquote{font-style: italic;}
+
+    .autor{
+        padding: 0 25px 10px 25px;
+        font-style: italic;
+        background: @azulpadrao;
+        float: right;
+
+        p{margin: 0;}
+
+        .nome{font-size: 1.8em;}
+    }
+
+    .marcas{
+        width: 100%;
+        padding: 50px;
+        background: transparent url(../img/overlay.png);
+    }
+
+    #carousel-marcas{
+        float: left;
+        width: 100%;        
+
+        .marca{
+            float: left;
+            width: 33%;
+            text-align: center;
+        }
+
+        a.carousel-control{
+            border: 2px solid #fff; 
+            border-radius: 500px;
+            width: 34px;
+            height: 34px;
+            margin-top: -17px;
+            padding-top: 0;
+        }
+    }
+
+
+}
+
+/*--- CONTATO ---------------------------------------------------------------------------------------------*/
+.front #contato {
+    padding: 100px 0;
+    text-align: left;
+
+    h4{margin-top: 0;}
+    h5{margin-top: 0;}
+    .mapa{margin-bottom: 20px;}
+    p{color: @azulsecundario;}    
+
+    .mapa{
+        float: left;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        margin-top: 5px;
+
+        iframe{margin-top: -120px;}
+    }
+
+    form{
+        label{
+            font-weight: normal;
+            color: @azulsecundario;
+            margin: 16px 0 0 7px !important;            
+        }
+        .form-item{
+            float: left;
+            width: 100%;
+            margin: 0 0 14px 0;
+        }
+        #webform-component-cidade{width: 67%;}
+        #webform-component-uf{width: 30%; float: right;}
+
+        .form-submit{
+            width: 100%;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+    }
+}
 
 
 
@@ -285,9 +577,18 @@ footer{
     color: #fff;
 
     .call{
-        background: @azulpadrao;
+        background: @azulpadrao url(../img/bg_rodape.jpg) top center no-repeat;
         text-align: center;
-        padding: 100px 0;
+        padding: 70px 0;
+
+        .ligue{
+            background: #0072a5;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 10px 30px;
+
+            a{color: #fff; font-weight: normal;}
+        }
     }
     .assinatura{
         color: #6d7a83;
@@ -314,16 +615,230 @@ footer{
 footer a{font-weight: bold;	}
 
 
+/*--- ADMIN ---------------------------------------------------------------------------------------*/
+
+/* editar conteudo */
+.page-node-edit{
+    h1.title em{
+        display: none;
+    }
+
+    .field-type-field-collection {
+
+        .form-text{width: 95%;}
+
+        .field-label label{
+            font-weight: normal;        
+            margin-left: 5px;
+        }
+    }
+
+    textarea{
+        padding: 7px;        
+    }
+
+    input[type="submit"]{
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+    .vertical-tabs-list a strong{font-weight: normal;}
+}
+
+/* conteudo */
+.page-admin-content{
+    fieldset{        
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+
+        legend{
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+    input[type="submit"]{
+        font-weight: normal;
+        margin-top: 15px;
+    }
+}
+
+/* webform */
+.page-node-webform-results{
+    .tabs,
+    .webform-results-per-page{display: none;}
+}
+
+.page-node-submission{
+    .tabs, 
+    .resend,
+    .webform-submission-navigation{display: none;}
+
+    fieldset{padding: 0;}
+}
+
+/* pessoas */
+.page-admin-people{
+
+    fieldset{        
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+
+        legend{
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+    input[type="submit"]{
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+}
+.page-admin-people-create{
+    #edit-locale, #edit-metatags{display: none;}
+}
+
+.page-user-edit{
+    .tabs,
+    #edit-locale,
+    #edit-picture,
+    #edit-timezone,
+    #edit-ckeditor,
+    #edit-metatags{display: none;}
+}
 
 
 /***************************************************************************************************/
 @media (max-width: 460px){
-
+    footer .ligue.desktop{display:none;}
 }
+@media (min-width: 461px){
+    footer .ligue.mobile{display:none;}
+}
+
 @media (max-width: 767px){
-    header{
+    .front header{
+        
+        .navbar-toggle{
+            background-color: @azulpadrao;
+            border: none;
+        }
+        .icon-bar{background-color: #fff !important;}
+
+        #topnav{
+            border: none;
+            box-shadow: none;
+            padding: 25px;
+            margin-bottom: 0;
+        }
+        .extra-info{display: none;}
         h1.logo{margin: auto;}
         .navbar-toggle{margin: 17px 5px 0 0;}
+        #menu-secoes{text-align: center;}
+    }
+    section{padding: 20px;}
+
+    .front #principal .destaque{
+        .btn{display: none;}
+
+         .item{
+            background-color: @azulpadrao;
+            background-image: none;
+            padding: 7% 15% 0 15%;
+            min-height: 220px;
+
+            h2{font-size: 1em;}
+            h4{font-size: 1em;}
+        }
+    }
+    .front #bemvindo{
+        img, p{display: none;}        
+        i{
+            float: right;
+            color: @azulsecundario;
+        }
+        i.fa-minus{display: none;}
+        h4{
+            background: #fff;
+            border: 1px solid @azulsecundario;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .toggled{
+
+            h4{
+                color: #fff;
+                background: @azulpadrao;
+                margin-bottom: 0;
+            }
+            i{color: #fff;}
+
+            i.fa-minus{display: block;}
+
+            p{
+                background: #fff;
+                border: 1px solid @azulsecundario;
+                padding: 15px;
+                margin-top: 0;
+                display: block;
+                margin-bottom: 25px;
+            }
+            
+            i.fa-plus{display: none;}
+        }
+
+       
+    }
+    .front #servicos{
+        .servico{
+            margin-bottom: 100px;
+        }
+    }
+
+    .front #especialistas{
+        .pessoa{
+            float: left;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .front #laboratorio{
+        #thumbcarousel{display: none;}
+    }
+
+    .front #depoimentos{display: none;}
+
+    .front #contato {
+
+        padding-top: 20px;
+        margin-bottom: 20px;
+
+        h4{
+            font-size: 2.14em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .formulario-contato,
+        .mapa{display: none;}
+    }
+
+    .front footer{
+
+        .call{
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        .assinatura{text-align: center;}
+
+        .menu-rodape{display: none;}
     }
 
 }
@@ -357,15 +872,18 @@ footer a{font-weight: bold;	}
                 }
 
                 a{
-                    padding-left: 25px;
-                    padding-right: 25px;
+                    padding-left: 23px;
+                    padding-right: 23px;
                 }
 
                 li.active a{background: #f5f5f5;}
                 a:hover,
                 li.active a:hover{background: #f5f5f5;}
             }
-        }
+        }        
+    }
+    .front #bemvindo{
+        i{display: none;}        
     }
 }
 @media (max-width: 1199px) {

@@ -34,7 +34,7 @@
 
 ?>
 
-  <div class="botao-ligue"><a href="http://goldenhair.com.br/#contato"><img src="http://goldenhair.com.br/sites/all/themes/goldenhair/img/ligue.png" /></a></div>      
+  
 
 <div class="bootstrap clear-block panel-display" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 

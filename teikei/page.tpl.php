@@ -29,11 +29,15 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                <div class="menu-secoes">
                <ul id="menu-secoes" class="nav navbar-nav">
-                   <li class="active"><a data-toggle="pill" href="#bemvindo">Bem vindo</a></li>
-                   <li><a data-toggle="pill" href="#especialistas">Especialistas</a></li>
-                   <li><a data-toggle="pill" href="#laboratorio">Estrutura</a></li>
-                   <li><a data-toggle="pill" href="#depoimentos">Depoimentos</a></li>
-                   <li><a data-toggle="pill" href="#contato">Contato</a></li>
+                   <li><a href="<?php print $front_page; ?>#bemvindo">Bem vindo</a></li>
+                   <li><a href="<?php print $front_page; ?>#especialistas">Especialistas</a></li>
+                   <li><a href="<?php print $front_page; ?>#laboratorio">Estrutura</a></li>
+                   <li><a href="<?php print $front_page; ?>#depoimentos">Depoimentos</a></li>
+                   <li><a href="<?php print $front_page; ?>#contato">Contato</a></li>
+                   <?php if(user_is_logged_in()){ ?>    
+                    <li><a href="<?php print $front_page; ?>admin/people">Usuários</a></li>
+                    <li><a href="<?php print $front_page; ?>user/logout">Sair</a></li>                    
+                   <?php }  ?>  
                   </ul>
               </div>
            </div><!-- /.navbar-collapse -->
@@ -64,6 +68,7 @@
 		            <?php print $messages; ?>
 		          </div></div> <!-- /.section, /#messages -->
 		          <?php endif; ?>
+              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 		          <?php if ($tabs): ?>
 		            <div class="tabs">
 		              <?php print render($tabs); ?>
